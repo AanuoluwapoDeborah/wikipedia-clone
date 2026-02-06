@@ -36,10 +36,12 @@ body {
     top: 80px;
 }
 #absolute div {
-    width: 70px;
-    height: 70px;
+    padding: 5px;
     position: absolute;
     width: 9%;
+}
+#absolute div:hover {
+    background-color: rgb(39,41,45);
 }
 div a {
     text-decoration: none;
@@ -287,20 +289,22 @@ footer {
     justify-content: space-between;
     align-items: center;
 }
+#mobile-footer-flex {
+    display: none;
+}
 #last {
     margin-top: 10px;
     margin-bottom: 30px;
+    font-size: 13px;
 }
 #last a {
     text-decoration: none;
-    font-size: 13px;
     color: rgb(136,163,232);
 }
 #last a:hover {
     text-decoration: underline;
 }
 #last small {
-    font-size: 13px;
     color: rgb(162,169,177);
 }
 
@@ -341,13 +345,16 @@ footer {
         margin-bottom: 15px;
         padding: 0 5px;
     }
+    #flex-divs div:hover {
+        background-color: rgb(39,41,45);
+    }
     #flex-divs div strong {
-        font-size: 16px;
+        font-size: 15px;
         font-weight: 700;
     }
     #flex-divs div small {
-        font-size: 14px;
-        padding: 0 5px;
+        font-size: 13px;
+        padding: 0 7px;
         font-weight: normal;
     }
     #btn {
@@ -427,5 +434,107 @@ footer {
         padding: 8px 40px;
         font-size: 14px;
         font-weight: 700;
+    }
+    footer {
+        margin: auto;
+        margin-top: 40px;
+        padding: 7px;
+        width: 98%;
+    }
+    #footer-flex {
+        display: none;
+    }
+    #mobile-footer-flex {
+        display: block;
+    }
+    #mobile-footer-flex #support {
+        text-align: center;
+        line-height: 1.2;
+    }
+    #mobile-footer-flex #support img {
+        width: 15%;
+        margin-bottom: 10px;
+    }
+    #mobile-footer-flex #support p {
+        font-size: 12px;
+        color: rgb(162,169,177);
+    }
+    #mobile-footer-flex #support a {
+        font-size: 12px;
+        color: rgb(136,163,232);
+    }
+    #mobile-footer-flex #support a:hover {
+        text-decoration: underline;
+    }
+    #mobile-footer-flex #grid {
+        width: 90vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 7px;
+        margin-top: 20px;
+    }
+    #mobile-footer-flex #grid a {
+        margin-top: 20px;
+        text-align: start;
+        padding-right: 10px;
+        text-decoration: none;
+        margin-bottom: 5px;
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+    #mobile-footer-flex #grid a img {
+        width: 31%;
+    }
+    #mobile-footer-flex #grid a:hover {
+        background-color: rgb(39,41,45);
+    }
+    #mobile-footer-flex #grid a #blue {
+        color: rgb(136,163,232);
+        font-size: 14px;
+    }
+    #mobile-footer-flex #grid a span {
+        color: rgb(162,169,177);
+        font-size: 13px;
+    }
+    #mobile-footer-flex #download {
+        background-color: rgb(32,33,34);
+        padding: 0.5px 2px;
+    }
+    #mobile-footer-flex #download #top {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 5px;
+        width: 100vw;
+    }
+    
+    #mobile-footer-flex #download a {
+        color: rgb(136,163,232);
+        font-weight: 700;
+        font-size: 13px;
+    }
+    #mobile-footer-flex #download #bottom {
+        width: 95vw;
+        font-size: 13px;
+        color: rgb(162,169,177);
+        line-height: 1.5;
+    }
+    #mobile-footer-flex #download p {
+        margin: 15px 0;
+    }
+    #mobile-footer-flex #birthday {
+        background-color: rgb(32,33,34);
+        padding: 5px 30px;
+        margin: 30px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: rgb(162,169,177);
+        font-size: 13px;
+    }
+    #last {
+        margin-top: 20px;
+        margin-bottom: 40px;
     }
 }
